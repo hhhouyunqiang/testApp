@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.joanzapata.iconify.widget.IconTextView
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:text="无网络连接！"
+        android:layout_height="150dp" />
+
+</LinearLayout>

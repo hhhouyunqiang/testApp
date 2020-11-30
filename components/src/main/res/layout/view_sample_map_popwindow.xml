@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_map_baidu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/base_camera_takephoto"
+        android:gravity="center"
+        android:text="百度地图"
+        android:textColor="#323232" />
+
+    <View
+        style="@style/divider_line" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_map_tengxun"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="腾讯地图"/>
+
+    <View
+        style="@style/divider_line" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_map_gaode"
+        android:background="@drawable/base_camera_btn_nativephoto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="高德地图"
+        android:textColor="#323232" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:gravity="center" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_map_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/base_camert_btn_cancel"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#323232" />
+</android.support.v7.widget.LinearLayoutCompat>

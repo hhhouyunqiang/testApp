@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MTAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/top_bg</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:windowBackground">@color/content_bg</item>
+        <item name="android:textColorPrimary">#333333</item>
+        <item name="colorAccent">@color/primary</item>
+    </style>
+
+</resources>

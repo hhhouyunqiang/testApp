@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyDatePicker" parent="@style/Theme.AppCompat.Light">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:windowBackground">@color/content_bg</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:textColorPrimary">#333333</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:datePickerStyle">@style/MyDatePicker</item>
+   </style>
+
+    <style name="divider_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_line_height</item>
+        <item name="android:background">@color/divider_line</item>
+    </style>
+
+    <style name="divider_line_dark">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_line_height</item>
+        <item name="android:background">#ECECEC</item>
+    </style>
+
+</resources>

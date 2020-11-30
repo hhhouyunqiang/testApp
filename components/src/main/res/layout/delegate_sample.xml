@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bg_1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/icon_left"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/top_left_arrow" />
+        <TextView
+            android:id="@+id/tv_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/sample_title"
+            android:textSize="@dimen/top_title" />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_map"
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:paddingRight="15dp"
+            android:text="{icon-map}"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/top_left_arrow" />
+    </RelativeLayout>
+
+    <View style="@style/divider_line"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_survey_sample"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/scv_survey_sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_survey_sample_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_sample_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp">
+                        <TextView
+                            android:id="@+id/tv_survey_sample_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center|left"
+                            android:textColor="@color/color18"
+                            android:textSize="@dimen/item_survey_title" />
+                        <TextView
+                            android:id="@+id/tv_survey_sample_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/item_started"
+                            android:textSize="@dimen/size2" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        style="@style/divider_line"/>
+
+                </LinearLayout>
+
+                <View style="@style/divider_line"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sample_list"
+                        android:textColor="@color/color10" />
+                    <Button
+                        android:id="@+id/btn_survey_sample_add"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_enabled"
+                        android:gravity="center"
+                        android:text="+ 新增"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size2" />
+                    <LinearLayout
+                        android:id="@+id/btn_cati_sample"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:background="@drawable/btn_enabled">
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/icon_cati"
+                            android:textSize="@dimen/size5"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="6dp"
+                            android:text="开始调查"
+                            android:textSize="@dimen/size1"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_cati_survey_sample"
+                        android:visibility="gone"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_enabled"
+                        android:gravity="center">
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:gravity="center_vertical"
+                            android:text="{icon-cati}"
+                            android:textSize="@dimen/size5"
+                            android:textColor="@color/white" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="开始调查"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size2" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View style="@style/divider_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <SearchView
+                        android:id="@+id/sv_survey_sample"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/searchview_line"
+                        android:backgroundTint="@color/content_bg"
+                        android:gravity="left|center_vertical"
+                        android:iconifiedByDefault="false"
+                        android:inputType="textFilter"
+                        android:queryHint="输入样本标识" />
+                </LinearLayout>
+
+                <View style="@style/divider_line"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_sample_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp">
+                    <RelativeLayout
+                        android:id="@+id/sample_status_down"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/tab_sample_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="状态"
+                            android:textColor="@color/color08"
+                            android:textSize="@dimen/size1" />
+                        <com.joanzapata.iconify.widget.IconButton
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_toRightOf="@+id/tab_sample_status"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/icon_down"
+                            android:background="@null"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/size1" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/sample_sort_down"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/tab_sample_sort"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="排序"
+                            android:textColor="@color/color08"
+                            android:textSize="@dimen/size1" />
+                        <com.joanzapata.iconify.widget.IconButton
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_toRightOf="@+id/tab_sample_sort"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/icon_down"
+                            android:background="@null"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/size1" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View style="@style/divider_line"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_survey_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

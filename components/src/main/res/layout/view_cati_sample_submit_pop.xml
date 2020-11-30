@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:background="@color/white"
+    android:paddingTop="15dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="15dp">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="提交后不能更改！"
+        android:textSize="15sp" />
+    <RadioGroup
+        android:id="@+id/rg_sample_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:background="@null"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_sample_refuse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="拒访" />
+        <RadioButton
+            android:id="@+id/rb_sample_contact_failed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="无人接听" />
+        <RadioButton
+            android:id="@+id/rb_sample_contact_invalid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="无效号码" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left|center_vertical"
+        android:padding="5dp"
+        android:text="回访时间:"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/tv_time_choice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_time"
+        app:layout_constraintLeft_toRightOf="@+id/tv_time"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left|center_vertical"
+        android:padding="5dp"
+        android:text="  --请选择--"
+        android:textSize="13sp"
+        android:textColor="@color/color08" />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_pick_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"
+        android:background="@null">
+    </android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/cl_pick_view"
+        android:padding="5dp"
+        android:text="备注:"
+        android:textSize="13sp" />
+    <EditText
+        android:id="@+id/et_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_remarks"
+        app:layout_constraintTop_toTopOf="@+id/tv_remarks"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="left"
+        android:background="@null"
+        android:textSize="13sp" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_remarks"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_cancel"
+        android:textColor="@color/white"
+        android:text="取  消" />
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_cancel"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_enabled"
+        android:textColor="@color/white"
+        android:text="确  定" />
+</android.support.constraint.ConstraintLayout>

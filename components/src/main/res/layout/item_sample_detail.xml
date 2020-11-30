@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+    <TextView
+        android:paddingLeft="10dp"
+        android:id="@+id/tv_item_sample_detail_tag"
+        android:layout_width="100dp"
+        android:text="addr"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:textColor="@color/color09"
+        android:layout_height="40dp" />
+    <TextView
+        android:paddingRight="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_item_sample_detail_tag"
+        android:id="@+id/tv_item_sample_detail_content"
+        android:text="上海"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+    <View
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/divider_line"
+      />
+</android.support.constraint.ConstraintLayout>

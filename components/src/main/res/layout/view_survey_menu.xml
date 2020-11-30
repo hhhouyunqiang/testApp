@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fafafa">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/item_survey_all"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/all_survey"
+            android:button="@null"
+            android:textColor="@drawable/radio_btn_menu"/>
+        <RadioButton
+            android:id="@+id/item_survey_create"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/create_survey"
+            android:button="@null"
+            android:textColor="@drawable/radio_btn_menu"/>
+        <RadioButton
+            android:id="@+id/item_survey_mine"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/mine_survey"
+            android:button="@null"
+            android:textColor="@drawable/radio_btn_menu"/>
+    </RadioGroup>
+
+</android.support.v7.widget.LinearLayoutCompat>

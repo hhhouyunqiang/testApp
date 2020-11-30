@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bg_1"
+        android:gravity="center_vertical">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/icon_left"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/top_left_arrow" />
+
+        <TextView
+            android:id="@+id/tv_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="通知公告"
+            android:textSize="@dimen/top_title" />
+    </RelativeLayout>
+
+    <View style="@style/divider_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_message_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="通知"
+                android:textColor="@color/color09"
+                android:textSize="18sp" />
+
+            <View style="@style/divider_line"/>
+
+            <TextView
+                android:id="@+id/tv_message_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="2018-07-16"
+                android:textColor="@color/color11"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_message_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="       请各位访员遵守调查要求，按照被访人的真实回答填写问卷，不得引导和干涉被访者的回答请各位访员遵守调查要求，按照被访人的真实回答填写问卷，不得引导和干涉被访者的回答"
+                android:textColor="@color/color09"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@color/top_bg_1">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/icon_left"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/top_left_arrow" />
+        <TextView
+            android:id="@+id/tv_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textSize="@dimen/top_title" />
+    </RelativeLayout>
+    <View style="@style/divider_line"/>
+    <View
+        style="@style/divider_line"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h3"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="记住密码"
+            android:textSize="@dimen/size3" />
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sc_mine_setting_save_account"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/divider_line"/>
+    <View
+        style="@style/divider_line"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h3"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="数据自动同步"
+            android:textSize="@dimen/size3" />
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sc_mine_setting_auto_syncdata"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/divider_line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h3"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="仅WIFI模式上传多媒体文件"
+            android:textSize="@dimen/size3" />
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sc_mine_setting_media_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/divider_line"/>
+    <View
+        style="@style/divider_line"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_clear_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h3"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="清除本地数据"
+            android:textColor="@color/color06"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_data_size"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="100M"
+            android:textSize="@dimen/size3"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <View style="@style/divider_line"/>
+</LinearLayout>

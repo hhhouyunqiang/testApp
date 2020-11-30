@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>Ringsurvey2 UI Test</title>
+	<meta name="viewport" 
+		  content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<script src="jquery-1.12.4.min.js"></script>
+	<link href="jquery-ui.min.css" rel="stylesheet"/>
+	<script src="jquery-ui.min.js"></script>	
+	<script src="jquery.ui.touch-punch.min.js"></script>
+	<link href="rs2-ui-web.css" rel="stylesheet"/>
+	<link href="device.css" rel="stylesheet"/>
+	<link href="survey-panel.css" rel="stylesheet"/>
+	<script src="rs2-ego.js"></script>
+	<script src="rs2-ui-mobile.js"></script>
+	<script src="extensions.js"></script>
+	<script src="rs2-m-plugin.js"></script>
+	<script src="survey-panel.js"></script>
+	<link href="calc.css" rel="stylesheet"/>
+	<script src="calc.js"></script>
+	<script src="survey.js"></script>
+  </head>
+  <body>
+	<div id="survey1" class="survey-wrapper"></div>
+	<div class="calc-container" style="display:none">
+		<div id="calculator">
+			<div class="entrybox">
+				<div class="entry">
+					<p id="calc-answer">0</p>
+				</div>
+				<div id="calc-history">
+					<p>0</p>
+				</div>
+			</div>
+			<div class="buttons">
+				<button class='red' value='ac'>AC</button>
+				<button class='red' value='ce'>CE</button>
+				<button value='/'>&divide;</button>
+				<button value='*'>x</button>
+
+				<button value='7'>7</button>
+				<button value='8'>8</button>
+				<button value='9'>9</button>
+				<button value='-'>-</button>
+
+				<button value='4'>4</button>
+				<button value='5'>5</button>
+				<button value='6'>6</button>
+				<button value='+'>+</button>
+
+				<button value='1'>1</button>
+				<button value='2'>2</button>
+				<button value='3'>3</button>
+				<button class='invisible'>N</button>
+
+				<button id='zeroButton' value='0'>0</button>
+				<button value='.'>.</button>
+				<button id='equalButton' value='='>=</button>
+			</div>
+			<div class='calc-footer'>
+				<button class="cancel">取消</button>
+				<button class="complete">确定</button>
+			</div>
+		</div><!-- end calculator -->
+	</div><!-- end container -->
+  </body>
+</html>

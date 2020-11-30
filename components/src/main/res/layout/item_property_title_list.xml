@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#F9F9F9">
+
+    <TextView
+        android:id="@+id/tv_item_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/color18"
+        android:textSize="@dimen/size2" />
+
+    <LinearLayout
+        android:id="@+id/ll_sample_detail_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="3dp"
+            android:text="@string/icon_edit"
+            android:textSize="@dimen/item_right_arrow"
+            android:textColor="@color/primary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="编辑"
+            android:textSize="@dimen/size1"
+            android:textColor="@color/primary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sample_detail_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="3dp"
+            android:text="@string/icon_delete"
+            android:textSize="@dimen/item_right_arrow"
+            android:textColor="@color/primary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="删除"
+            android:textSize="@dimen/size1"
+            android:textColor="@color/primary"/>
+    </LinearLayout>
+
+</LinearLayout>

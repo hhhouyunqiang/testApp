@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_questionnaire"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_questionnaire_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="南京"
+            android:textColor="@color/color18"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/icTv_ic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="@string/icon_clock"
+                android:textColor="@color/color08"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_questionnaire_time"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="开始：上午10:15"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@+id/icTv_ic"
+                app:layout_constraintTop_toBottomOf="@id/tv_questionnaire_title" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/itv_questionnaire_qrc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="@string/icon_qrcode"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tv_questionnaire_progress"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="进行中"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:background="@drawable/view_executing" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/tv_questionnaire_detail_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="@string/icon_right"
+                android:textSize="@dimen/item_right_arrow" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_questionnaire_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:text="3m:22s"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

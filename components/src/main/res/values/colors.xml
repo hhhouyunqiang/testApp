@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#EE8118</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#5E000000</color>
+    <color name="top_title">@color/white</color>
+
+    <color name="top_bg">@color/primary</color>
+    <color name="top_bg_1">#F5F5F5</color>
+    <color name="content_bg">#EFEFEF</color>
+    <color name="bottom_bg">@color/white</color>
+
+    <color name="color01">#FD7B7D</color>
+    <color name="color02">#7A8FEF</color>
+    <color name="color03">#60B4E4</color>
+    <color name="color04">#62D0C9</color>
+    <color name="color05">#101010</color>
+    <color name="color06">#FF0000</color>
+    <color name="color07">#E6E6E6</color>
+    <color name="color08">#797979</color>
+
+    <color name="color09">#333333</color>
+    <color name="color10">#888888</color>
+    <color name="color11">#999999</color>
+
+    <color name="color12">#89BD50</color>
+    <color name="color13">#1286C8</color>
+    <color name="color14">#EE7756</color>
+    <color name="color15">#E5627A</color>
+    <color name="color16">#F4D8CC</color>
+    <color name="color17">#608FA9</color>
+    <color name="color18">#292929</color>
+
+    <color name="item_preparing">#1374BF</color>
+    <color name="item_started">#77C121</color>
+    <color name="item_stopped">#FEAD21</color>
+    <color name="item_finished">@color/color08</color>
+
+    <color name="divider_line">@color/color07</color>
+    <color name="bottom_text">@color/color08</color>
+
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl_survey_main_questionnaire"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bg_1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/icon_left"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/top_left_arrow" />
+
+        <TextView
+            android:id="@+id/tv_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="问卷二维码"
+            android:textSize="@dimen/top_title" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_topbar_right"-->
+            <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="刷新"-->
+            <!--android:textColor="@color/primary" />-->
+    </RelativeLayout>
+
+    <View style="@style/divider_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="可通过扫描下方二维码在线填写该问卷"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_questionnaire_qrcode"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:id="@+id/view_survey_qrc_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_survey_qrcode"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_wechat"
+            android:textSize="@dimen/item_right_arrow"
+            android:textColor="@color/color12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  微信分享"
+            android:textSize="@dimen/size2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_qqsurvey_qrc_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_survey_qrcode"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp">
+        <!--<com.joanzapata.iconify.widget.IconTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/icon_qq"-->
+            <!--android:textSize="@dimen/item_right_arrow"-->
+            <!--android:textColor="@color/color12" />-->
+        <ImageView
+            android:layout_width="19sp"
+            android:layout_height="19sp"
+            android:src="@drawable/icon_qq"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  QQ分享"
+            android:textSize="@dimen/size2" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/view_survey_qrc_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_survey_qrcode"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_link"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/item_right_arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  复制链接"
+            android:textSize="@dimen/size2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_survey_qrc_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_survey_qrcode"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_download"
+            android:textSize="@dimen/item_right_arrow"
+            android:textColor="@color/color06" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  保存图片"
+            android:textSize="@dimen/size2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="提示：受访者填写问卷前，请访问员确保退出问卷编辑模式"
+        android:textSize="13sp" />
+
+</LinearLayout>

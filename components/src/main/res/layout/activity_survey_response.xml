@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ringdata.ringinterview.survey.SoftKeyboardLsnedRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/view_root"
+    tools:context="com.ringdata.ringinterview.capi.components.ui.survey.response.ResponseActivity">
+    <RelativeLayout
+        android:id="@+id/rl_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:gravity="center_vertical"
+        android:background="@color/top_bg_1">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/icon_left"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/top_left_arrow" />
+        <TextView
+            android:id="@+id/tv_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/top_title" />
+        <com.joanzapata.iconify.widget.IconButton
+            android:id="@+id/btn_font_size"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_toLeftOf="@+id/icBtn_topbar_history"
+            android:paddingRight="10dp"
+            android:background="@null"
+            android:text="{icon-font}"
+            android:textSize="20sp"
+            android:textColor="@color/primary" />
+        <com.joanzapata.iconify.widget.IconButton
+            android:id="@+id/icBtn_topbar_history"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:background="@null"
+            android:text="{icon-menu}"
+            android:textColor="@color/primary"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <View style="@style/divider_line"/>
+    <WebView
+        android:id="@+id/wv_response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </WebView>
+    <View style="@style/divider_line" />
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="3dp"
+        android:background="@color/bottom_bg">
+        <RelativeLayout
+            android:id="@+id/rl_response_prev"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/itv_prev_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="top|center_horizontal"
+                android:textSize="22sp"
+                android:text="{icon-left-black}"
+                android:textColor="@color/primary" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="上一页"
+                android:textSize="@dimen/bottom_text" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_response_save"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="top|center_horizontal"
+                android:text="{icon-save}"
+                android:textSize="22sp"
+                android:textColor="@color/primary" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="暂存"
+                android:textSize="@dimen/bottom_text" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_response_next"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/itv_next_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="top|center_horizontal"
+                android:text="{icon-right-black}"
+                android:textSize="22sp"
+                android:textColor="@color/primary" />
+            <TextView
+                android:id="@+id/tv_next_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="下一页"
+                android:textSize="@dimen/bottom_text" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.ringdata.ringinterview.survey.SoftKeyboardLsnedRelativeLayout>

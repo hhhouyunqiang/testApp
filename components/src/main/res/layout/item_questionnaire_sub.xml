@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_questionnaire"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#F9F9F9"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/tv_questionnaire_sub_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="标题"
+        android:textColor="@color/color09" />
+    <Button
+        android:id="@+id/tv_questionnaire_sub_add"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:background="@drawable/btn_enabled"
+        android:gravity="center"
+        android:text="+ 新增"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size2" />
+</LinearLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@color/top_bg_1">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/icon_left"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/top_left_arrow" />
+        <TextView
+            android:id="@+id/tv_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="报表"
+            android:textSize="@dimen/top_title" />
+    </RelativeLayout>
+
+    <View style="@style/divider_line"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/divider_line"
+                android:layout_marginTop="20dp"/>
+            <LinearLayout
+                android:id="@+id/rl_survey_process"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h3"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_process" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="答卷进度"
+                    android:textSize="@dimen/size3" />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/icon_right"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <View style="@style/divider_line"/>
+
+            <View style="@style/divider_line"/>
+            <LinearLayout
+                android:id="@+id/rl_survey_map"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h3"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_map" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="调查地图"
+                    android:textSize="@dimen/size3" />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/icon_right"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <View style="@style/divider_line"/>
+
+            <View style="@style/divider_line"/>
+            <LinearLayout
+                android:id="@+id/rl_survey_sample_status"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h3"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_sample_status" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="样本状态分布"
+                    android:textSize="@dimen/size3" />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/icon_right"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <View style="@style/divider_line"/>
+
+            <View style="@style/divider_line"/>
+            <LinearLayout
+                android:id="@+id/rl_survey_index"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h3"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_index" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="指标动态"
+                    android:textSize="@dimen/size3" />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/icon_right"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <View style="@style/divider_line"/>
+
+            <View style="@style/divider_line"/>
+            <LinearLayout
+                android:id="@+id/rl_survey_sample_use"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h3"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_sample_use" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="样本使用动态"
+                    android:textSize="@dimen/size3" />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/icon_right"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <View style="@style/divider_line"/>
+
+            <View style="@style/divider_line"/>
+            <LinearLayout
+                android:id="@+id/rl_survey_interviewer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h3"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_interviewer" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="访员绩效"
+                    android:textSize="@dimen/size3" />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/icon_right"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <View style="@style/divider_line"/>
+
+            <View style="@style/divider_line"/>
+            <LinearLayout
+                android:id="@+id/rl_survey_explorer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h3"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_explorer" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="浏览器参数"
+                    android:textSize="@dimen/size3" />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/icon_right"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <View style="@style/divider_line"/>
+
+            <View style="@style/divider_line"/>
+            <LinearLayout
+                android:id="@+id/rl_survey_source"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h3"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_source" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="来源报告"
+                    android:textSize="@dimen/size3" />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/icon_right"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <View style="@style/divider_line"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

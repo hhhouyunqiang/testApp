@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="300dp">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/map_infowindow">
+        <TextView
+            android:id="@+id/tv_infowindow_name"
+            android:text="上海"
+            android:gravity="start"
+            android:textColor="@color/top_title"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_infowindow_address"
+            android:text="地址：xxxxxx"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_infowindow_call"
+            android:text="电话：xxxxxx"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/btn_infowindow_call"
+                android:text="打电话"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="100dp"
+                android:background="@drawable/map_infowindow_btn_enable"
+                android:textSize="15sp"
+                android:layout_height="30dp" />
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btn_infowindow_nav"
+                android:text="导航"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"
+                android:background="@drawable/map_infowindow_btn_enable"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:layout_alignParentRight="true"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

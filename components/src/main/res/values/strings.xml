@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">云调查</string>
+    <string name="company_name">上海萌泰数据科技股份有限公司</string>
+
+    <string name="sign_in">登    录</string>
+    <string name="sign_out">登    出</string>
+
+    <string name="username_ic">{icon-user}</string>
+    <string name="username">用户名</string>
+
+    <string name="password_ic">{icon-password}</string>
+    <string name="password">密码</string>
+
+    <string name="language_ic">{icon-language}</string>
+    <string name="language">多语言</string>
+
+    <string name="signup">注册</string>
+
+    <string name="forget_ic">{icon-search}</string>
+    <string name="forget">找回密码</string>
+
+    <string name="setting_ic">{icon-setting}</string>
+    <string name="setting">设置</string>
+
+    <string name="sample_title">样本</string>
+    <string name="survey_info">项目简介</string>
+    <string name="survey_detail">项目详情</string>
+    <string name="sample_list">样本列表</string>
+    <string name="sample_add">新增</string>
+
+    <string name="user_ic">{icon-user-o}</string>
+    <string name="icon_down">{icon-angle-down}</string>
+    <string name="icon_up">{icon-angle-up}</string>
+    <string name="icon_left">{icon-left-open}</string>
+    <string name="icon_right">{icon-right-open}</string>
+
+    <string name="all_survey">全部项目</string>
+    <string name="create_survey">我创建的项目</string>
+    <string name="mine_survey">我参与的项目</string>
+    <string name="knowledge_title">知识</string>
+    <string name="mine_title">我的</string>
+
+    <string name="icon_cawi">{icon-cawi}</string>
+    <string name="text_cawi">网络</string>
+    <string name="icon_cadi">{icon-cadi}</string>
+    <string name="text_cadi">录入</string>
+    <string name="icon_capi">{icon-capi}</string>
+    <string name="text_capi">面访</string>
+    <string name="icon_cati">{icon-cati}</string>
+    <string name="text_cati">电话</string>
+    <string name="icon_caxi">{icon-caxi}</string>
+    <string name="text_caxi">混合</string>
+
+    <string name="mine_synchronous_data_ic">{icon-sync}</string>
+    <string name="mine_update_password_ic">{icon-pencil}</string>
+    <string name="mine_about_ic">{icon-building}</string>
+    <string name="mine_synchronous_data">同步数据</string>
+    <string name="mine_update_password">修改密码</string>
+    <string name="mine_setting">设置</string>
+
+    <string name="icon_info">{icon-info}</string>
+    <string name="icon_edit">{icon-pencil}</string>
+    <string name="icon_delete">{icon-delete}</string>
+    <string name="icon_wechat">{icon-wechat}</string>
+    <string name="icon_qq">{icon-qq}</string>
+    <string name="icon_link">{icon-link}</string>
+    <string name="icon_download">{icon-download}</string>
+    <string name="icon_clock">{icon-clock}</string>
+    <string name="icon_close">{icon-cancel}</string>
+    <string name="icon_building">@string/mine_about_ic</string>
+    <string name="icon_qrcode">{icon-qrcode}</string>
+
+    <string name="mine_about">关于我们</string>
+    <string name="mine_sign_out">@string/sign_out</string>
+
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@color/top_bg_1">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/icon_left"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/top_left_arrow" />
+        <TextView
+            android:id="@+id/tv_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/mine_title"
+            android:gravity="center"
+            android:textSize="@dimen/top_title" />
+    </RelativeLayout>
+    <View
+        style="@style/divider_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/iv_mine_headimage"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/default_headimage" />
+        <TextView
+            android:id="@+id/tv_mine_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/color09"
+            android:text="@string/username" />
+    </LinearLayout>
+    <View
+        style="@style/divider_line" />
+    <View
+        android:layout_marginTop="20dp"
+        style="@style/divider_line" />
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_main_syncdata"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/h3"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:background="@color/white">-->
+        <!--<com.joanzapata.iconify.widget.IconTextView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:gravity="center_vertical|left"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:textColor="@color/color01"-->
+            <!--android:text="@string/mine_synchronous_data_ic"-->
+            <!--android:textSize="@dimen/size6" />-->
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:text="@string/mine_synchronous_data"-->
+            <!--android:textColor="@color/color05"-->
+            <!--android:textSize="@dimen/size3" />-->
+        <!--<com.joanzapata.iconify.widget.IconTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="@string/icon_right"-->
+            <!--android:textSize="@dimen/item_right_arrow" />-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--style="@style/divider_line" />-->
+    <LinearLayout
+        android:id="@+id/ll_mine_updatepassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color02"
+            android:text="@string/mine_update_password_ic"
+            android:textSize="@dimen/size6" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="@string/mine_update_password"
+            android:textColor="@color/color05"
+            android:textSize="@dimen/size3" />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/icon_right"
+            android:textSize="@dimen/item_right_arrow" />
+    </LinearLayout>
+    <View
+        style="@style/divider_line" />
+    <LinearLayout
+        android:id="@+id/ll_mine_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h3"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color03"
+            android:text="@string/setting_ic"
+            android:textSize="@dimen/size6" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="@string/mine_setting"
+            android:textColor="@color/color05"
+            android:textSize="@dimen/size3" />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/icon_right"
+            android:textSize="@dimen/item_right_arrow" />
+    </LinearLayout>
+    <View
+        style="@style/divider_line" />
+    <View
+        android:layout_marginTop="20dp"
+        style="@style/divider_line" />
+    <LinearLayout
+        android:id="@+id/ll_mine_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h3"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color04"
+            android:text="@string/mine_about_ic"
+            android:textSize="@dimen/size6" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="@string/mine_about"
+            android:textColor="@color/color05"
+            android:textSize="@dimen/size3" />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/icon_right"
+            android:textSize="@dimen/item_right_arrow" />
+    </LinearLayout>
+    <View
+        style="@style/divider_line" />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_mine_updateversion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h3"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color04"
+            android:text="@string/icon_info"
+            android:textSize="@dimen/size6" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="当前版本"
+            android:textColor="@color/color05"
+            android:textSize="@dimen/size3" />
+        <TextView
+            android:id="@+id/tv_version_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="V1.0"
+            android:textSize="@dimen/item_right_arrow" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="20dp"
+        style="@style/divider_line" />
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:id="@+id/bt_mine_signout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h3"
+        android:text="@string/mine_sign_out"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        android:background="@color/white" />
+    <View
+        style="@style/divider_line" />
+</LinearLayout>

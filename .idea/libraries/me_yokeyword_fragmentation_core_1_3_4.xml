@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="me.yokeyword:fragmentation-core-1.3.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/cd56c478676935b470dc02d82b147aa91dc4c011/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/cd56c478676935b470dc02d82b147aa91dc4c011/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

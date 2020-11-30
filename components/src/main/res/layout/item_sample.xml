@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_sample_index"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/primary"
+            android:text="@string/icon_info"
+            android:textSize="16sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/tv_item_sample_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color18"
+                android:textSize="@dimen/size2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp">
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/icTv_ic"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="@string/icon_clock"
+                    android:textColor="@color/color08"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/tv_item_sample_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/color08"
+                    android:textSize="@dimen/size1" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:id="@+id/tv_item_sample_progress"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:background="@drawable/view_executing" />
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/tv_item_sample_detail_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="@string/icon_right"
+                android:textSize="@dimen/item_right_arrow" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_item_sample_visit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/size1" />
+    </RelativeLayout>
+</LinearLayout>

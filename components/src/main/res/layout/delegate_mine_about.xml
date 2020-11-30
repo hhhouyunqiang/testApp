@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@color/top_bg_1">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/icon_left"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/top_left_arrow" />
+        <TextView
+            android:id="@+id/tv_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/mine_about"
+            android:textSize="@dimen/top_title" />
+    </RelativeLayout>
+    <View
+        style="@style/divider_line">
+    </View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="9dp"
+        android:textSize="14sp"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="         锐研·云调查平台是萌泰数据旗下一站式抽样问卷调查云平台，集成电话调查、面访调查、网络调查、在线录入、混合调查五种调查方式； 基于专利问卷设计引擎，支持多语言，多问卷和多人协作，支持开展大型追踪调查项目；提供抽样、质控、红包、抽奖等多种调查小工具；支持无缝对接锐研·云统计平台。">
+    </TextView>
+    <TextView
+        android:id="@+id/tv_version_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/btn_monetware_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Powerby 萌泰数据 | 锐研·云调查" />
+</LinearLayout>

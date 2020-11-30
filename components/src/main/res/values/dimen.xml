@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="divider_line_height">0.3dp</dimen>
+    <dimen name="item_right_arrow">18sp</dimen>
+    <dimen name="top_left_arrow">23sp</dimen>
+    <dimen name="top_title">18sp</dimen>
+    <dimen name="top_height">48dp</dimen>
+    <dimen name="bottom_text">10sp</dimen>
+    <dimen name="bottom_height">48sp</dimen>
+
+    <dimen name="refresh_height">45dp</dimen>
+
+    <dimen name="size1">12sp</dimen>
+    <dimen name="size2">14sp</dimen>
+    <dimen name="size3">16sp</dimen>
+    <dimen name="size4">18sp</dimen>
+    <dimen name="size5">20sp</dimen>
+    <dimen name="size6">22sp</dimen>
+    <dimen name="size7">24sp</dimen>
+    <dimen name="size8">13sp</dimen>
+
+    <dimen name="h1">10dp</dimen>
+    <dimen name="h2">20dp</dimen>
+    <dimen name="h3">44dp</dimen>
+
+    <dimen name="sign_in_appname">25sp</dimen>
+    <dimen name="sign_in_edit_height">48dp</dimen>
+    <dimen name="sign_in_edit">16sp</dimen>
+    <dimen name="sign_in_edit_ic">20sp</dimen>
+
+    <dimen name="item_survey_height">300dp</dimen>
+    <dimen name="item_survey_title">17sp</dimen>
+    <dimen name="item_survey_tag">12sp</dimen>
+    <dimen name="item_survey_tag_height">20dp</dimen>
+    <dimen name="item_survey_tag_width">45dp</dimen>
+    <dimen name="item_survey_time">12sp</dimen>
+    <dimen name="item_survey_content">14sp</dimen>
+    <dimen name="item_survey_bottom_text">14sp</dimen>
+    <dimen name="item_survey_bottom_number">14sp</dimen>
+
+    <dimen name="item_knowledge_top_title">16sp</dimen>
+    <dimen name="item_knowledge_top_time">12sp</dimen>
+    <dimen name="item_knowledge_content">13sp</dimen>
+
+
+</resources>

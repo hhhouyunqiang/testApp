@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.journeyapps:zxing-android-embedded-3.5.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/377334821be54cf135bb72184f94c6f7e03e3989/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/377334821be54cf135bb72184f94c6f7e03e3989/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

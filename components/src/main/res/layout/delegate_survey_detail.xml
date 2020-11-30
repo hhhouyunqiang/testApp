@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@color/top_bg_1">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/icon_left"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/top_left_arrow" />
+
+        <TextView
+            android:id="@+id/tv_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/survey_detail"
+            android:textSize="@dimen/top_title" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/tv_item_survey_cawi_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:text="@string/icon_qrcode"
+            android:textSize="@dimen/top_left_arrow" />
+    </RelativeLayout>
+
+    <View style="@style/divider_line" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_survey_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_survey_detail" />
+
+                <View style="@style/divider_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_my_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <View
+                        style="@style/divider_line" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_survey_sample_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的分派样本"
+                            android:textColor="@color/color18"
+                            android:textSize="@dimen/item_survey_title" />
+
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/icon_right"
+                            android:textSize="@dimen/item_right_arrow" />
+                    </RelativeLayout>
+
+                    <View style="@style/divider_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="未开始:"
+                                android:textColor="@color/color08" />
+
+                            <TextView
+                                android:id="@+id/tv_survey_sample_preparing_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:gravity="center"
+                                android:textColor="#448cee" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="15dp"
+                            android:background="@color/divider_line" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="进行:"
+                                android:textColor="@color/color08" />
+
+                            <TextView
+                                android:id="@+id/tv_survey_sample_executing_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:gravity="center"
+                                android:textColor="@color/primary" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="15dp"
+                            android:background="@color/divider_line" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="完成:"
+                                android:textColor="@color/color08" />
+
+                            <TextView
+                                android:id="@+id/tv_survey_sample_submit_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:gravity="center"
+                                android:textColor="@color/color13" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="15dp"
+                            android:background="@color/divider_line" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="拒访:"
+                                android:textColor="@color/color08" />
+
+                            <TextView
+                                android:id="@+id/tv_survey_sample_refuse_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:gravity="center"
+                                android:textColor="#ff5656" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="15dp"
+                            android:background="@color/divider_line" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="无效:"
+                                android:textColor="@color/color08" />
+
+                            <TextView
+                                android:id="@+id/tv_survey_sample_off_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:gravity="center"
+                                android:textColor="#232323" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/divider_line" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="数据汇总"
+                    android:textColor="@color/color18"
+                    android:textSize="15sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_survey_detail_group_data"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginRight="-1dp"
+                            android:background="@drawable/btn_survey_qrcode"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="访问员"
+                                    android:textSize="@dimen/size1" />
+
+                                <TextView
+                                    android:id="@+id/tv_survey_detail_access"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="@color/primary"
+                                    android:textSize="@dimen/size1" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_survey_detail_group"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/size6"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="12dp"
+                                android:text="团队"
+                                android:textSize="@dimen/size3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_survey_detail_sample_data"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginRight="-1dp"
+                            android:background="@drawable/btn_survey_qrcode"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="完成率"
+                                    android:textSize="@dimen/size1" />
+
+                                <TextView
+                                    android:id="@+id/tv_survey_detail_finish_percent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="@color/primary"
+                                    android:textSize="@dimen/size1" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_survey_detail_sample"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/color13"
+                                android:textSize="@dimen/size6"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="12dp"
+                                android:text="样本"
+                                android:textSize="@dimen/size3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginRight="-1dp"
+                            android:background="@drawable/btn_survey_qrcode"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="成功率"
+                                    android:textSize="@dimen/size1" />
+
+                                <TextView
+                                    android:id="@+id/tv_survey_detail_success_percent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="@color/primary"
+                                    android:textSize="@dimen/size1" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_survey_detail_questionnaire"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#18bd6b"
+                                android:textSize="@dimen/size6"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="12dp"
+                                android:text="答卷"
+                                android:textSize="@dimen/size3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginRight="-1dp"
+                            android:background="@drawable/btn_survey_qrcode"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="平均"
+                                    android:textSize="@dimen/size1" />
+
+                                <TextView
+                                    android:id="@+id/tv_survey_detail_time_average"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="@color/primary"
+                                    android:textSize="@dimen/size1" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_survey_detail_time_whole"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#ea7272"
+                                android:textSize="@dimen/size6"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="12dp"
+                                android:text="调查总时长"
+                                android:textSize="@dimen/size3"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_survey_detail_data_whole"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginRight="-1dp"
+                            android:background="@drawable/btn_survey_qrcode"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="平均"
+                                    android:textSize="@dimen/size1" />
+
+                                <TextView
+                                    android:id="@+id/tv_survey_detail_data_average"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="@color/primary"
+                                    android:textSize="@dimen/size1" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_survey_detail_data_whole"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#ed6c11"
+                                android:textSize="@dimen/size6"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="12dp"
+                                android:text="数据总量"
+                                android:textSize="@dimen/size3"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="调查进度"
+                    android:textColor="@color/color18"
+                    android:textSize="15sp" />
+
+                <View style="@style/divider_line"/>
+
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/line_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:paddingLeft="-10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@color/white" />
+
+                <View style="@style/divider_line"/>
+
+                <LinearLayout
+                    android:id="@+id/view_survey_other_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <View style="@style/divider_line" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="更多监控报表"
+                            android:textColor="@color/color18"
+                            android:textSize="15sp" />
+
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:id="@+id/icTv_other_right_arrow"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/icon_right"
+                            android:textSize="@dimen/item_right_arrow" />
+                    </RelativeLayout>
+
+                    <View style="@style/divider_line" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

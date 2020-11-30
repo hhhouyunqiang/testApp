@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/item_survey_create_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:layout_marginLeft="20dp"
+            android:text="创建时间"
+            android:button="@null"
+            android:textColor="@drawable/radio_btn_menu"/>
+        <RadioButton
+            android:id="@+id/item_survey_update_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="更新时间"
+            android:button="@null"
+            android:textColor="@drawable/radio_btn_menu"/>
+    </RadioGroup>
+
+</android.support.v7.widget.LinearLayoutCompat>

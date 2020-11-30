@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+    <ScrollView
+        android:scrollbarStyle="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/iv_log"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/logo" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sign_in_edit_height"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/ictv_username"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/sign_in_edit_ic"
+                    android:textColor="@color/primary"
+                    android:text="@string/username_ic" />
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sign_in_edit_height"
+                    android:background="@null"
+                    android:lines="1"
+                    android:hint="@string/username" />
+            </LinearLayout>
+            <View
+                style="@style/divider_line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/ictv_password"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/password_ic"
+                    android:textSize="@dimen/sign_in_edit_ic"
+                    android:textColor="@color/primary" />
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:lines="1"
+                    android:inputType="textPassword"
+                    android:hint="@string/password" />
+            </LinearLayout>
+            <View
+                style="@style/divider_line"/>
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btn_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:height="@dimen/h3"
+                android:background="@drawable/sign_in_button"
+                android:text="@string/sign_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sign_in_edit" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:id="@+id/cl_signup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <!--<com.joanzapata.iconify.widget.IconTextView-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_width="40dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="@string/username_ic"-->
+                        <!--android:textSize="@dimen/sign_in_edit_ic"-->
+                        <!--android:textColor="@color/primary" />-->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:padding="11dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_sign_in" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center|left"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="6dp"
+                        android:text="@string/signup"
+                        android:textColor="@color/primary" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/cl_forget"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingLeft="26dp"
+                    android:paddingRight="26dp">
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="@string/forget_ic"
+                        android:textSize="@dimen/sign_in_edit_ic"
+                        android:textColor="@color/primary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center|left"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/forget"
+                        android:textColor="@color/primary" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/cl_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/setting_ic"
+                        android:textSize="@dimen/sign_in_edit_ic"
+                        android:textColor="@color/primary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center|left"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="6dp"
+                        android:text="@string/setting"
+                        android:textColor="@color/primary" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#90000000"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:text="{icon-visit-ok}"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_ok"
+            android:layout_marginLeft="10dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="成功访问"
+            android:background="@null"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        style="@style/divider_line">
+    </View>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:text="{icon-next-visit}"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_next_visit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:layout_marginLeft="10dp"
+            android:minWidth="0dp"
+            android:background="@null"
+            android:text="预约回访"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        style="@style/divider_line">
+
+    </View>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:text="{icon-refuse-visit}"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_refuse"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:layout_height="40dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="失败设定"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--style="@style/divider_line">-->
+    <!--</View>-->
+    <!---->
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<com.joanzapata.iconify.widget.IconTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="{ic-abnormal}"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<android.support.v7.widget.AppCompatButton-->
+            <!--android:id="@+id/btn_abnormal"-->
+            <!--android:background="@null"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:gravity="center"-->
+            <!--android:minHeight="0dp"-->
+            <!--android:minWidth="0dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="样本异常"-->
+            <!--android:textColor="@color/white" />-->
+    <!--</LinearLayout>-->
+
+</android.support.v7.widget.LinearLayoutCompat>

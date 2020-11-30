@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_item_survey_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:text=""
+            android:layout_weight="2"
+            android:textColor="@color/color18"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/tv_item_survey_status"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="right|center_vertical"
+            android:padding="2dp"
+            android:text=""
+            android:layout_weight="10"
+            android:textColor="@color/item_started"
+            android:textSize="@dimen/size2"
+            android:layout_alignParentRight="true" />
+</LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item_survey_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:lines="2"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.2"
+        android:textSize="@dimen/size2"
+        android:textColor="@color/color08"/>
+
+    <View
+        style="@style/divider_line_dark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_item_survey_role"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="角色："
+            android:textSize="@dimen/size1"
+            android:textColor="@color/color08"/>
+
+        <TextView
+            android:id="@+id/tv_item_survey_creator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="创建："
+            android:textSize="@dimen/size1"
+            android:textColor="@color/color08"/>
+
+        <TextView
+            android:id="@+id/tv_item_survey_start_time"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text=""
+            android:textSize="@dimen/size1"
+            android:textColor="@color/color08"/>
+
+        <RelativeLayout
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:background="@color/content_bg">
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/tv_item_survey_type_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/icon_cawi"
+                android:textSize="@dimen/size1"
+                android:textColor="@color/primary" />
+            <TextView
+                android:id="@+id/tv_item_survey_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/text_cawi"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/size1"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

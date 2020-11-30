@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.ringdata.ringinterview.capi.components.ui.survey.sample.map.MapActivity">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/top_bg"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icTv_topbar_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:text="{fa-angle-left}"
+            android:textColor="@color/top_title"
+            android:textSize="@dimen/top_left_arrow"
+            />
+        <TextView
+            android:id="@+id/tv_topbar_title"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:text="样本地图"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:textColor="@color/top_title"
+            android:textSize="@dimen/top_title"
+            />
+    </RelativeLayout>
+    <View
+        style="@style/divider_line"></View>
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/map_sample"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.baidu.mapapi.map.TextureMapView>
+</android.support.v7.widget.LinearLayoutCompat>

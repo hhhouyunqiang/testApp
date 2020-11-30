@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_item_message_dot"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:src="@drawable/read_dot"
+        android:textColor="@color/color06" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tv_item_message_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="通知"
+                android:textColor="@color/color08"
+                android:textSize="@dimen/item_knowledge_top_title" />
+
+            <TextView
+                android:id="@+id/tv_item_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center"
+                android:text="2017-08-16"
+                android:textColor="@color/color11"
+                android:textSize="@dimen/item_knowledge_top_time" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_message_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="请各位访员遵守调查要求，按照被访人的真实回答填写问卷，不得引导和干涉被访者的回答。"
+            android:textColor="@color/color11"
+            android:textSize="@dimen/item_knowledge_content" />
+
+        <TextView
+            android:id="@+id/tv_item_message_survey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:text="武汉大学CEES调查"
+            android:textColor="@color/color08"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/ictv_item_message_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="@string/icon_right"
+        android:textColor="@color/color08"
+        android:textSize="@dimen/item_right_arrow"/>
+
+</LinearLayout>

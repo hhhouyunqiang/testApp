@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.jakewharton:butterknife-8.8.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/00e18c63d28fc51bcf48452bb795064acbb0f41a/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/00e18c63d28fc51bcf48452bb795064acbb0f41a/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
